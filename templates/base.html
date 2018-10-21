@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MyFlaskApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+ 
+    <div class="container">
+
+<nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">AYEAYEAYE</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/articles">Articles?</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li><a href="/form">Register</a></li>
+              <li><a href="/login">Login</a></li>
+              
+            
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    </div>
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.6.2/basic/ckeditor.js"></script>
+    <script type="text/javascript">
+      CKEDITOR.replace('editor')
+
+
+     
+    </script>
+  
+  <body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJwQTsFnrDW3pd1Fe6MrStBXiW1kGemD-zMTtxb2-SmrlUR7F">
+    
+    
+    <br>
+    <center>
+    {% block content %}{% endblock %}
+  </center>
+  </body>
+
+  
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-footer">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Contact Us</a>
+      </div>
+      <h6>abc@xyz.com.sg</h6>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+
+  </div>
+</html>
