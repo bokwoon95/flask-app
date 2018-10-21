@@ -60,6 +60,10 @@ def signupform():
 def signupform2():
     return render_template('welcome.html')
 
+@app.route("/about")
+def about():
+    return render_template('about.html')
+
 @app.route('/handle_data', methods=['POST'])
 def handle_data():
     user = {
