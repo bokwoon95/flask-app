@@ -10,6 +10,14 @@ users = [{"firstname":"a",
 "password":"password",
 "commitment":3}]
 
+companies = [
+  {
+    "companyname":"Microsoft",
+    "role":"Data Engineer",
+    "commitment":3
+  }
+]
+
 @app.route("/form")
 def signupform():
     return render_template('start.html')

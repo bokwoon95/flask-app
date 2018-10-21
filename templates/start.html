@@ -10,9 +10,9 @@
   "Sign up Form"<br><br>
 
   First name:<br>
-  <input type="text" placeholder="firstname" name = 'firstname' required><br>
+  <input type="text" placeholder="firstname" name = 'firstname' value="a" required><br>
   Last name:<br>
-  <input type="text" placeholder="lastname" name = 'lastname' required><br>
+  <input type="text" placeholder="lastname" name = 'lastname' value="b" required><br>
   Country:<br>
   <select id="countries" name="countries" required>
       <option value="Brunei">Brunei</option>
@@ -30,9 +30,9 @@
       
   
   Contact Number:<br>
-  <input type="text" placeholder="contact number" name="contactnumber"required><br>
+  <input type="text" placeholder="contact number" name="contactnumber" value="c" required><br>
   Email:<br>
-  <input name="email1" type="email" required="1" id="email1" size="44" name = "email" required/><br>
+  <input name="email1" type="email" required="1" id="email1" size="44" name = "email" value="d@d.com" required/><br>
   
   <label for = "emailConfirm"> Confirm email: </label>
   <br>        
@@ -42,7 +42,7 @@
 
   <br>
   Password:<br>
-  <input name="password1" type="text" required="1" id="password1" size="44" name = "email" required/><br>
+  <input name="password1" type="text" required="1" id="password1" size="44" name = "password" value="e" required/><br>
   
   <label for = "passwordConfirm"> Confirm password: </label>
   <br>        
@@ -53,7 +53,7 @@
   Highest Education Level:
   <br>
 
-  <input type="radio" name='group1' value="PSLE" required>PSLE <br>
+  <input type="radio" name='group1' value="PSLE" checked required>PSLE <br>
   <input type="radio" name='group1' value="GCE 'O' level" required>GCE 'O' level <br>
   <input type="radio" name='group1' value="GCE 'A' level" required>GCE 'A' level <br>
   <input type="radio" name='group1' value="Diploma" required>Diploma <br>
@@ -67,11 +67,11 @@
 
   <br>
   Commitment:<br>
-  <input type="number" name="commitment">
+  <input type="number" name="commitment"value=3 >
   <br>
 
   <br>
-  <input type="checkbox" required>I agree to the terms and conditions* 
+  <input type="checkbox" checked required>I agree to the terms and conditions* 
   <p style="color:red">*This is a required field</p>
   <br>
 
