@@ -86,11 +86,14 @@ def result():
     filteredCompanies = []
     global companies
     # pdb.set_trace()
-    for company in companies:
-        if company['commitment'] <= userInSession['commitment']\
-        and company['industry'] == userInSession['industry']\
-        and company['country'] == userInSession['countries']:
-            filteredCompanies.append(company)
+    try:
+        for company in companies:
+            if company['commitment'] <= userInSession['commitment']\
+            and company['industry'] == userInSession['industry']\
+            and company['country'] == userInSession['countries']:
+                filteredCompanies.append(company)
+    except:
+        return redirect('/form')
     return render_template('result.html', companies=filteredCompanies)
 
 
