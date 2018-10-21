@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request, redirect
+from app import app
 import pdb
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
 users = [{"firstname":"a",
 "lastname":"b",
