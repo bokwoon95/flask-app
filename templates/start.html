@@ -1,0 +1,88 @@
+<a href="google">link</a>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+
+<form action = "/handle_data" method = "POST">
+  "Sign up Form"<br><br>
+  
+  Name:<br>
+  <input type="text" placeholder="Name" name = 'name' value="b" required><br>
+  Country:<br>
+  <select id="countries" name="countries" required>
+      <option value="Brunei">Brunei</option>
+      <option value="Cambodia">Cambodia</option>
+      <option value="Indonesia">Indonesia</option>
+      <option value="Laos">Laos</option>
+      <option value="Malaysia">Malaysia</option>
+      <option value="Myanmar">Maynmar</option>
+      <option value="Philippines">Philippines</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Thailand">Thailand</option>
+      <option value="Vietnam">Vietnam</option>
+      </select>
+  <br>
+      
+  
+  Contact Number:<br>
+  <input type="text" placeholder="contact number" name="contactnumber" value="c" required><br>
+  Email:<br>
+  <input name="email1" type="email" required="1" id="email1" size="44" name = "email" value="d@d.com" required/><br>
+  
+  <label for = "emailConfirm"> Confirm email: </label>
+  <br>        
+  <input name='email2', type = 'email'>
+  <button type='Check'equalTo=email1 id='validate'>Validate!</button>
+
+
+  <br>
+  Password:<br>
+  <input name="password1" type="text" required="1" id="password1" size="44" name = "password" value="e" required/><br>
+  
+  <label for = "passwordConfirm"> Confirm password: </label>
+  <br>        
+  <input name='password2', type = 'text'>
+  <button type='Check'equalTo=password1 id='validate'>Validate!</button>
+
+  <br>
+  Highest Education Level:
+  <br>
+
+  <input type="radio" name='group1' value="PSLE" checked required>PSLE <br>
+  <input type="radio" name='group1' value="GCE 'O' level" required>GCE 'O' level <br>
+  <input type="radio" name='group1' value="GCE 'A' level" required>GCE 'A' level <br>
+  <input type="radio" name='group1' value="Diploma" required>Diploma <br>
+  <input type="radio" name='group1' value="IB" required>IB <br>
+  <input type="radio" name='group1' value="Bsc Degree" required>Bsc Degree <br>
+  <input type="radio" name='group1' value="Masters" required>Masters <br>
+  <input type="radio" name='group1' value="Others" required>
+  Others:<br>
+  <input type="text" name='group1' placeholder="Please Specify"><br>
+
+
+  <br>
+  Commitment:<br>
+  <input type="number" name="commitment"value=3 >
+  <br>
+
+  <br>
+  Commitment:<br>
+  <input type="number" name="commitment"value=3 >
+  <br>
+
+  <br>
+  <input type="checkbox" checked required>I agree to the terms and conditions* 
+  <p style="color:red">*This is a required field</p>
+  <br>
+
+  <input type="submit" value="Go"><br>
+
+  
+
+  </form>
+
+  <html>
+<head>
