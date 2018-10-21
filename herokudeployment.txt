@@ -1,0 +1,4 @@
+Mostly followed this guide,
+    http://virantha.com/2013/11/14/starting-a-simple-flask-app-with-heroku/
+Except `gunicorn` was used as the command to start the application up
+    https://coderwall.com/p/pstm1w/deploying-a-flask-app-at-heroku
