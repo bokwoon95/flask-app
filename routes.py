@@ -72,10 +72,10 @@ def result():
     filteredCompanies = []
     global companies
     for company in companies:
-        # if company['commitment'] <= userInSession['commitment']\
-        # and company['role'] == userInSession['p']
-        # and company['country'] == userInSession['countries']:
-        #     filteredCompanies.append(company)
+        if company['commitment'] <= userInSession['commitment']\
+        and company['country'] == userInSession['countries']:
+        # and company['industry'] == userInSession['industry']
+            filteredCompanies.append(company)
         filteredCompanies.append(company)
     return render_template('result.html', companies=filteredCompanies)
 
