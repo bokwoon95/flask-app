@@ -1,4 +1,45 @@
-<a href="google">link</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MyFlaskApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+ 
+    <div class="container">
+
+<nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">AYEAYEAYE</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../welcome.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="/articles">Articles?</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li><a href="../start.html">Register</a></li>
+              <li><a href="/login">Login</a></li>
+            
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    </div>
 
 <!DOCTYPE html>
 <html>
@@ -7,8 +48,8 @@
 </head>
 
 <form action = "/handle_data" method = "POST">
-  "Sign up Form"<br><br>
   
+ <center>
   Name:<br>
   <input type="text" placeholder="Name" name = 'name' value="b" required><br>
   Country:<br>
@@ -62,12 +103,6 @@
   Others:<br>
   <input type="text" name='group1' placeholder="Please Specify"><br>
 
-
-  <br>
-  Commitment:<br>
-  <input type="number" name="commitment"value=3 >
-  <br>
-
   <br>
   Commitment:<br>
   <input type="number" name="commitment"value=3 >
@@ -77,28 +112,25 @@
   Industry:
   <br>
 
-  <input type="radio" name='group2' value="supplychainmanagement" checked required>Supply Chain Management <br>
-  <input type="radio" name='group2' value="food&beverage" checked required>Food & Beverage <br>
-  <input type="radio" name='group2' value="retail" checked required>Retail <br>
-  <input type="radio" name='group2' value="government" checked required> Government <br>
-  <input type="radio" name='group2' value="construction" checked required>Construction <br>
-  <input type="radio" name='group2' value="education" checked required>Education <br>
-  <input type="radio" name='group2' value="business" checked required>Business <br>
-  <input type="radio" name='group2' value="design&media" checked required>Design & Media <br>
-  <input type="radio" name='group2' value="Others" required>
-  Others:<br>
-  <input type="text" name='group1' placeholder="Please Specify"><br>
+  <input type="radio" name='industry' value="supplychainmanagement" checked required>Supply Chain Management <br>
+  <input type="radio" name='industry' value="food&beverage" checked required>Food & Beverage <br>
+  <input type="radio" name='industry' value="retail" checked required>Retail <br>
+  <input type="radio" name='industry' value="government" checked required> Government <br>
+  <input type="radio" name='industry' value="construction" checked required>Construction <br>
+  <input type="radio" name='industry' value="education" checked required>Education <br>
+  <input type="radio" name='industry' value="business" checked required>Business <br>
+  <input type="radio" name='industry' value="design&media" checked required>Design & Media <br>
+ <br>
 
   <br>
   <input type="checkbox" checked required>I agree to the terms and conditions* 
   <p style="color:red">*This is a required field</p>
   <br>
-
-  <input type="submit" value="Go"><br>
-
+ <button type="submit" value="Go"> Go</button>
   
+    
 
   </form>
-
+</center> 
   <html>
 <head>

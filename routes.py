@@ -52,6 +52,10 @@ companies = [\
 def signupform():
     return render_template('start.html')
 
+@app.route("/")
+def signupform2():
+    return render_template('welcome.html')
+
 @app.route('/handle_data', methods=['POST'])
 def handle_data():
     user = {
