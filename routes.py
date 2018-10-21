@@ -7,7 +7,8 @@ users = [{"firstname":"a",
 "email":"@mail.com",
 "countries":"countries",
 "contactnumber":"123",
-"password":"password"}]
+"password":"password",
+"commitment":3}]
 
 @app.route("/form")
 def signupform():
@@ -20,7 +21,8 @@ def handle_data():
     "email": request.form["email1"],
     "countries": request.form['countries'],
     "contactnumber": request.form['contactnumber'],
-    "password": request.form["password1"]}
+    "password": request.form["password1"],
+    "commitment": request.form["commitment"]}
     global users
     users.append(user)
     return redirect('/data')
