@@ -2,20 +2,21 @@
   
   {% block content %}
 
+  <div>
   {% for company in companies %}
-  <div class="card">
+  <div class="card" style="padding-left:80px">
   <div class="card-body">
-    <p>companyname: {{company.companyname}}</p>
-    <p>industry: {{company.industry}}</p>
-    <p>commitment: {{company.commitment}} months</p>
-    <p>description: {{company.description}}</p>
-    <p>country: {{company.country}}</p>
-    <p>companynumber: {{company.companynumber}}</p>
+    <p>Company Name: {{company.companyname}}</p>
+    <p>Industry: {{company.industry}}</p>
+    <p>Commitment: {{company.commitment}} months</p>
+    <p>Description: {{company.description}}</p>
+    <p>Country: {{company.country}}</p>
+    <p>Contact Number: {{company.companynumber}}</p>
     <br>
   </div>
   </div>
   {% endfor %}
-  </div>
+</div>
 
 
 {% endblock %}

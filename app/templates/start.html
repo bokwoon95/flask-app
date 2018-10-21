@@ -2,91 +2,84 @@
   
 {% block content %}
 
+<div class="container" >
 <form action = "/handle_data" method = "POST"> 
- <center>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" placeholder="Enter full name" id="name" name='name' class="form-control" required><br>
+    </div>
 
-  Name:<br>
-  <input type="text" placeholder="Name" name = 'name' value="b" required><br>
-  Country:<br>
-  <select id="countries" name="countries" required>
-      <option value="Brunei">Brunei</option>
-      <option value="Cambodia">Cambodia</option>
-      <option value="Indonesia">Indonesia</option>
-      <option value="Laos">Laos</option>
-      <option value="Malaysia">Malaysia</option>
-      <option value="Myanmar">Maynmar</option>
-      <option value="Philippines">Philippines</option>
-      <option value="Singapore">Singapore</option>
-      <option value="Thailand">Thailand</option>
-      <option value="Vietnam">Vietnam</option>
+    <div class="form-group">
+      <label for="country">Country</label>
+      <select multiple class="form-control" id="countries" name="countries" required>
+          <option value="Brunei">Brunei</option>
+          <option value="Cambodia">Cambodia</option>
+          <option value="Indonesia">Indonesia</option>
+          <option value="Laos">Laos</option>
+          <option value="Malaysia">Malaysia</option>
+          <option value="Myanmar">Maynmar</option>
+          <option value="Philippines">Philippines</option>
+          <option value="Singapore">Singapore</option>
+          <option value="Thailand">Thailand</option>
+          <option value="Vietnam">Vietnam</option>
       </select>
-  <br>
-      
-  
-  Contact Number:<br>
-  <input type="text" placeholder="contact number" name="contactnumber" value="c" required><br>
-  Email:<br>
-  <input name="email1" type="email" required="1" id="email1" size="44" name = "email" value="d@d.com" required/><br>
-  
-  <label for = "emailConfirm"> Confirm email: </label>
-  <br>        
-  <input name='email2', type = 'email'>
-  <button type='Check'equalTo=email1 id='validate'>Validate!</button>
+    </div>
 
+    <div class="form-group">
+      <label for="contactnumber">Contact Number:</label>
+      <input type="text" placeholder="Enter contact number" id="contactnumber" name='contactnumber' class="form-control" required><br>
+    </div>
 
-  <br>
-  Password:<br>
-  <input name="password1" type="text" required="1" id="password1" size="44" name = "password" value="e" required/><br>
-  
-  <label for = "passwordConfirm"> Confirm password: </label>
-  <br>        
-  <input name='password2', type = 'text'>
-  <button type='Check'equalTo=password1 id='validate'>Validate!</button>
+    <div class="form-group">
+      <label for="email1">Email:</label>
+      <input type="text" placeholder="Enter email" id="email1" name='email1' class="form-control" required><br>
+    </div>
 
-  <br>
-  Highest Education Level:
-  <br>
+    <div class="form-group">
+      <label for="password1">Password:</label>
+      <input type="text" placeholder="Enter password" id="password1" name='password1' class="form-control" required><br>
+    </div>
 
-  <input type="radio" name='group1' value="PSLE" checked required>PSLE <br>
-  <input type="radio" name='group1' value="GCE 'O' level" required>GCE 'O' level <br>
-  <input type="radio" name='group1' value="GCE 'A' level" required>GCE 'A' level <br>
-  <input type="radio" name='group1' value="Diploma" required>Diploma <br>
-  <input type="radio" name='group1' value="IB" required>IB <br>
-  <input type="radio" name='group1' value="Bsc Degree" required>Bsc Degree <br>
-  <input type="radio" name='group1' value="Masters" required>Masters <br>
-  <input type="radio" name='group1' value="Others" required>
-  Others:<br>
-  <input type="text" name='group1' placeholder="Please Specify"><br>
+    <div class="form-group">
+        <label for="education">Highest Education Level</label>
+        <select multiple class="form-control" id="countries" name="countries" required>
+            <option value="PSLE">PSLE</option>
+            <option value="GCE 'O' level">GCE 'O' level</option>
+            <option value="GCE 'A' level">GCE 'A' level</option>
+            <option value="Diploma">Diploma</option>
+            <option value="IB">IB</option>
+            <option value="Bsc Degree">Bsc Degree</option>
+            <option value="Masters">Masters</option>
+            <option value="Others">Others</option>
+        </select>
+      </div>
 
-  <br>
-  Commitment:<br>
-  <input type="number" name="commitment"value=3 >
-  <br>
+      <div class="form-group">
+          <label for="commitment">Commitment:</label>
+          <input type="number" placeholder="How many months are you available for?" id="commitment" name='commitment' class="form-control" required><br>
+        </div>
 
-  <br>
-  Industry:
-  <br>
-
-  <input type="radio" name='industry' value="Supply Chain Management" checked required>Supply Chain Management <br>
-  <input type="radio" name='industry' value="Food & Beverage" required>Food & Beverage <br>
-  <input type="radio" name='industry' value="Retail"  required>Retail <br>
-  <input type="radio" name='industry' value="Government"  required> Government <br>
-  <input type="radio" name='industry' value="Construction"  required>Construction <br>
-  <input type="radio" name='industry' value="Education"  required>Education <br>
-  <input type="radio" name='industry' value="Business"  required>Business <br>
-  <input type="radio" name='industry' value="Design & Media"  required>Design & Media <br>
- <br>
-
+        <div class="form-group">
+            <label for="industry">Industry</label>
+            <select multiple class="form-control" id="industry" name="industry" required>
+                <option value="Supply Chain Management">Supply Chain Management</option>
+                <option value="Food & Beverage">Food & Beverage</option>
+                <option value="Retail">Retail</option>
+                <option value="Government">Government</option>
+                <option value="Construction">Construction</option>
+                <option value="Education">Education</option>
+                <option value="business">Business</option>
+                <option value="Design & Media">Design & Media</option>
+            </select>
+          </div>
 
   <br>
   <input type="checkbox" checked required>I agree to the terms and conditions* 
   <p style="color:red">*This is a required field</p>
   <br>
- <button type="submit" value="Go"> Go</button>
-  
-    
-
+ <button type="submit" value="Go"> Sign Up</button>
   </form>
-</center>
+</div>
+
 
 {% endblock %}
