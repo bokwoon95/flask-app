@@ -16,7 +16,7 @@ userInSession = {}
 companies = [\
   {
     "companyname":"Microsoft",
-    "industry":"Tech",
+    "industry":"business",
     "commitment":'3',
     "country": "Cambodia",
     "description":"code things",
@@ -24,7 +24,7 @@ companies = [\
   },
    {
     "companyname":"Microsoft2",
-    "industry":"Tech",
+    "industry":"business",
     "commitment":'3',
     "country": "Cambodia",
     "description":"code things",
@@ -32,7 +32,7 @@ companies = [\
   },
    {
     "companyname":"Microsoft3",
-    "industry":"Tech",
+    "industry":"business",
     "commitment":'3',
     "country": "Cambodia",
     "description":"code things",
@@ -40,13 +40,17 @@ companies = [\
   },
    {
     "companyname":"Microsoft4",
-    "industry":"Tech",
+    "industry":"business",
     "commitment":'4',
     "country": "Cambodia",
     "description":"code things",
     "companynumber":"12345678",
   },
 ]
+
+@app.route("/")
+def index():
+    return render_template('welcome.html')
 
 @app.route("/form")
 def signupform():
@@ -64,7 +68,9 @@ def handle_data():
     "countries": request.form['countries'],
     "contactnumber": request.form['contactnumber'],
     "password": request.form["password1"],
-    "commitment": request.form["commitment"]}
+    "commitment": request.form["commitment"],
+    "industry": request.form["industry"]
+    }
     global users
     global userInSession
     users.append(user)
@@ -75,12 +81,12 @@ def handle_data():
 def result():
     filteredCompanies = []
     global companies
+    # pdb.set_trace()
     for company in companies:
         if company['commitment'] <= userInSession['commitment']\
+        and company['industry'] == userInSession['industry']\
         and company['country'] == userInSession['countries']:
-        # and company['industry'] == userInSession['industry']
             filteredCompanies.append(company)
-        filteredCompanies.append(company)
     return render_template('result.html', companies=filteredCompanies)
 
 
