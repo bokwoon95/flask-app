@@ -3,10 +3,10 @@
 {% block content %}
 
 <div class="container" >
-<form action = "/handle_data" method = "POST"> 
-    <div class="form-group">
+<form action = "/handle_data" method = "POST" autocomplete="off"> 
+    <div class="form-group" autocomplete="off">
       <label for="name">Name</label>
-      <input type="text" placeholder="Enter full name" id="name" name='name' class="form-control" required><br>
+      <input type="text" placeholder="Enter full name" id="name" name='name' class="form-control" autocomplete="off" required><br>
     </div>
 
     <div class="form-group">
@@ -27,17 +27,17 @@
 
     <div class="form-group">
       <label for="contactnumber">Contact Number:</label>
-      <input type="text" placeholder="Enter contact number" id="contactnumber" name='contactnumber' class="form-control" required><br>
+      <input type="text" placeholder="Enter contact number" id="contactnumber" name='contactnumber' class="form-control" autocomplete="off" required><br>
     </div>
 
     <div class="form-group">
       <label for="email1">Email:</label>
-      <input type="text" placeholder="Enter email" id="email1" name='email1' class="form-control" required><br>
+      <input type="text" placeholder="Enter email" id="email1" name='email1' class="form-control" autocomplete="off" required><br>
     </div>
 
     <div class="form-group">
       <label for="password1">Password:</label>
-      <input type="text" placeholder="Enter password" id="password1" name='password1' class="form-control" required><br>
+      <input type="text" placeholder="Enter password" id="password1" name='password1' class="form-control" autocomplete="off" required><br>
     </div>
 
     <div class="form-group">
